@@ -1,6 +1,18 @@
 #root {
   max-width: 550px;
   margin: 0 auto;
+  background: rgb(255, 255, 255);
+}
+
+h1 {
+  font-size: 26px;
+  margin: 0;
+}
+
+h5 {
+  margin: 3px 0;
+  font-size: 11px;
+  font-weight: 600;
 }
 
 nav {
@@ -23,17 +35,21 @@ nav > p {
 .card {
   display: flex;
   margin: 40px;
+  border-bottom: 1px solid #f5f4f4;
+  padding-bottom: 42px;
 }
 .card--location {
+  font-size: 12px;
   letter-spacing: 2px;
   text-transform: uppercase;
+  margin: 12px 0 -6px 0px;
 }
 
 .card--location > a {
-  /* font-size: 12px; */
+  font-size: 10px;
   text-transform: none;
-  padding: 0 16px;
-  color: grey;
+  padding: 0 10px;
+  color: #918E9B;
   letter-spacing: 1px;
 }
 
@@ -44,19 +60,34 @@ nav > p {
   width: 20px;
   height: 20px;
   float: left;
-  margin: 2px 5px 0 0;
-  background-size: 13px;
+  margin: 3px -4px 0 0;
+  background-size: 9px;
 }
 .card--stats {
   display: flex;
   flex-direction: column;
-  padding-left: 30px;
+  padding-left: 20px;
 }
 
 .card--image {
   height: 168px;
   width: 125px;
   border-radius: 5px;
-
   object-fit: cover;
+}
+
+.card--description {
+  font-size: 10px;
+  line-height: 16px;
+  color: gray;
+}
+
+@media (max-width: 400px) {
+  .card {
+    display: block;
+  }
+  .card--image {
+    height: 100%;
+    width: 100%;
+  }
 }
