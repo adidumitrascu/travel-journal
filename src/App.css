@@ -1,17 +1,14 @@
 #root {
   max-width: 550px;
   margin: 0 auto;
-
 }
 
 nav {
   display: flex;
-  justify-content: center;  
+  justify-content: center;
   align-items: center;
-  background: #F55A5A;
+  background: #f55a5a;
   gap: 5px;
-
-
 }
 nav > p {
   color: white;
@@ -21,7 +18,45 @@ nav > p {
 .nav--logo {
   height: 24px;
   width: 24px;
-
 }
 
+.card {
+  display: flex;
+  margin: 40px;
+}
+.card--location {
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
 
+.card--location > a {
+  /* font-size: 12px; */
+  text-transform: none;
+  padding: 0 16px;
+  color: grey;
+  letter-spacing: 1px;
+}
+
+.card--location::before {
+  content: "";
+  display: block;
+  background: url("/src/assets/location.png") no-repeat;
+  width: 20px;
+  height: 20px;
+  float: left;
+  margin: 2px 5px 0 0;
+  background-size: 13px;
+}
+.card--stats {
+  display: flex;
+  flex-direction: column;
+  padding-left: 30px;
+}
+
+.card--image {
+  height: 168px;
+  width: 125px;
+  border-radius: 5px;
+
+  object-fit: cover;
+}
